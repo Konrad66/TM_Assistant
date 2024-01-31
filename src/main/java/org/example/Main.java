@@ -18,6 +18,12 @@ public class Main {
         if (wybor == 1){
             rozkladanie();
         }
+        if (wybor == 2 ){
+            instrukcja();
+        }
+        if (wybor == 2 ){
+            instrukcja();
+        }
 
     }
 
@@ -43,4 +49,15 @@ Który z podpunktów chcesz rozwinąć?
         System.out.println("pomoge Ci rozłożyć gre!");
 
     }
+
+    public static void instrukcja(){
+        System.out.println("Witaj w panelu instrukcji. Czego chciałbyś się dowiedzieć?");
+    }
+
+
+    public static void punkty(){
+        System.out.println("Witaj w panelu podliczaniu punktów. ");
+    }
+
+
 }
