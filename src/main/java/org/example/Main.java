@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+        SettingGame settingGame = new SettingGame();
         System.out.println("Witaj w asystencie TM. Poniżej masz kilka opcji do wyboru");
 
         Scanner scanner = new Scanner(System.in);
@@ -24,6 +25,8 @@ public class Main {
         if (wybor == 2 ){
             instrukcja();
         }
+
+        settingGame.board();
 
     }
 
