@@ -7,13 +7,23 @@ public class SettingGame {
         System.out.println("Witaj w asystencie rozkładania gry. Wybierz etap który sprawia dla Ciebie trudność.");
     }
 
+
+    public void controll(String input){
+        if(input.equals("1")){
+            firstStep();
+        }
+    }
+
+
     public void control(String input) {
         welcome();
         switch (input) {
             case "1":
+                System.out.println("Plansza");
                 fifthStep();
                 break;
             case "2":
+                System.out.println("działa");
                 secondStep();
                 break;
             default:

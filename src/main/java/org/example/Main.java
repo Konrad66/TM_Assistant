@@ -17,6 +17,16 @@ public class Main {
         System.out.println("4. Opuść asystenta gry.");
         String wybor = scanner.next();
 
+        settingGame.controll(wybor);
+
+        /*
+        if(wybor.equals("1")){
+            String drugiWybór = scanner.next();
+            settingGame.control(drugiWybór);
+        }
+
+         */
+        /*
 
         if (wybor.equals("1")){
             rozkladanie();
@@ -28,6 +38,8 @@ public class Main {
             instrukcja();
         }
 
+
+         */
 
 
     }
