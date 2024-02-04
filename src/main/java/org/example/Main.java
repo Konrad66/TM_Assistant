@@ -15,18 +15,20 @@ public class Main {
         System.out.println("2. Interaktywna instrukcja.");
         System.out.println("3. Pomoc przy liczeniu punktów.");
         System.out.println("4. Opuść asystenta gry.");
-        int wybor = scanner.nextInt();
-        if (wybor == 1){
+        String wybor = scanner.next();
+
+
+        if (wybor.equals("1")){
             rozkladanie();
         }
-        if (wybor == 2 ){
-            instrukcja();
+        if (wybor.equals("2")){
+            settingGame.control(wybor);
         }
-        if (wybor == 2 ){
+        if (wybor.equals("3")){
             instrukcja();
         }
 
-        settingGame.board();
+
 
     }
 
