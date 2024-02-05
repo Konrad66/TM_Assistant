@@ -3,37 +3,26 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
+
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-
-        SettingGame settingGame = new SettingGame();
         System.out.println("Witaj w asystencie TM. Poniżej masz kilka opcji do wyboru");
-
-        Scanner scanner = new Scanner(System.in);
-
-
         System.out.println("1. Pomoc przy rozkładaniu gry.");
         System.out.println("2. Interaktywna instrukcja.");
         System.out.println("3. Pomoc przy liczeniu punktów.");
         System.out.println("4. Opuść asystenta gry.");
-        String wybor = scanner.next();
 
+        String wybor = scanner.next();
         if (wybor.equals("1")) {
-            settingGame.welcome();
-            wybor = scanner.next();
-            if (wybor.equals("1")) {
-                settingGame.firstStep();
-            } else if (wybor.equals("2")) {
-                settingGame.secondStep();
-            } else if (wybor.equals("3")) {
-                settingGame.thirdStep();
-            } else {
-                System.out.println("reszta nie działa ");
-            }
-        } else {
+            assistWithGameSetup();
+        } else if(wybor.equals("2")){
+
+        }
+        else {
             System.out.println("nie działa");
         }
-
 
     }
 
@@ -69,5 +58,26 @@ Który z podpunktów chcesz rozwinąć?
         System.out.println("Witaj w panelu podliczaniu punktów. ");
     }
 
+    public static void assistWithGameSetup() {
+        SettingGame settingGame = new SettingGame();
+        settingGame.welcome();
+        String wybor = scanner.next();
+        switch (wybor) {
+            case "1" -> {
+                settingGame.firstStep();
+                System.out.println("działa");
+            }
+            case "2" -> settingGame.secondStep();
+            case "3" -> settingGame.thirdStep();
+            default -> System.out.println("reszta nie działa ");
+        }
+    }
 
 }
+
+
+//refaktowyzowanie - poprawianie jakości kodu bez zmiany jego działania
+// 1. Oszczędność czasu na zrozumienie kodu
+// 2. Minimalizujemy ryzyko błędu
+// 3. Przyszpieszenie i ułatwienie wprowadzania zmian w kodzie (w tym się zawiera unikanie powtórek)
+// Zaciąganie długu technologicznego to jest pomijanie refaktoryzacji
