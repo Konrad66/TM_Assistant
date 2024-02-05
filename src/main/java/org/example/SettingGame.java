@@ -3,8 +3,14 @@ package org.example;
 public class SettingGame {
 
 
-    public void welcome() {
+    public void welcome(){
         System.out.println("Witaj w asystencie rozkładania gry. Wybierz etap który sprawia dla Ciebie trudność.");
+        System.out.println("Plansza");
+        System.out.println("Kości");
+        System.out.println("Karty");
+
+
+// 9 - wyjscie
     }
 
 
@@ -16,11 +22,10 @@ public class SettingGame {
 
 
     public void control(String input) {
-        welcome();
         switch (input) {
             case "1":
                 System.out.println("Plansza");
-                fifthStep();
+                firstStep();
                 break;
             case "2":
                 System.out.println("działa");

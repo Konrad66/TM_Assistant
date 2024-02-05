@@ -11,35 +11,28 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+
         System.out.println("1. Pomoc przy rozkładaniu gry.");
         System.out.println("2. Interaktywna instrukcja.");
         System.out.println("3. Pomoc przy liczeniu punktów.");
         System.out.println("4. Opuść asystenta gry.");
         String wybor = scanner.next();
 
-        settingGame.controll(wybor);
-
-        /*
-        if(wybor.equals("1")){
-            String drugiWybór = scanner.next();
-            settingGame.control(drugiWybór);
+        if (wybor.equals("1")) {
+            settingGame.welcome();
+            wybor = scanner.next();
+            if (wybor.equals("1")) {
+                settingGame.firstStep();
+            } else if (wybor.equals("2")) {
+                settingGame.secondStep();
+            } else if (wybor.equals("3")) {
+                settingGame.thirdStep();
+            } else {
+                System.out.println("reszta nie działa ");
+            }
+        } else {
+            System.out.println("nie działa");
         }
-
-         */
-        /*
-
-        if (wybor.equals("1")){
-            rozkladanie();
-        }
-        if (wybor.equals("2")){
-            settingGame.control(wybor);
-        }
-        if (wybor.equals("3")){
-            instrukcja();
-        }
-
-
-         */
 
 
     }
@@ -62,17 +55,17 @@ Który z podpunktów chcesz rozwinąć?
 
  */
 
-    public static void rozkladanie(){
+    public static void rozkladanie() {
         System.out.println("pomoge Ci rozłożyć gre!");
 
     }
 
-    public static void instrukcja(){
+    public static void instrukcja() {
         System.out.println("Witaj w panelu instrukcji. Czego chciałbyś się dowiedzieć?");
     }
 
 
-    public static void punkty(){
+    public static void punkty() {
         System.out.println("Witaj w panelu podliczaniu punktów. ");
     }
 
