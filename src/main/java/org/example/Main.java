@@ -24,6 +24,7 @@ public class Main {
             System.out.println("nie działa");
         }
 
+
     }
 
     public static void assistWithGameSetup() {
@@ -44,6 +45,8 @@ public class Main {
             case "8" -> settingGame.eighthStep();
             default -> System.out.println("reszta nie działa ");
         }
+
+
     }
 
     public static void assistWithInstruction(){
