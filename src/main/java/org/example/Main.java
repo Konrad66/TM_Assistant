@@ -26,49 +26,22 @@ public class Main {
 
     }
 
-/*
-
-Menu główne:
-pomoc przy rozkładaniu gry
-pomoc przy liczeniu punktów
-interaktywna instrukcja
-
-
-Rzuć kostką i dobierz surowce
-Wykonaj 3 akcje
-Zresetuj karty
-Wyjście
-
-Który z podpunktów chcesz rozwinąć?
-
-
- */
-
-    public static void rozkladanie() {
-        System.out.println("pomoge Ci rozłożyć gre!");
-
-    }
-
-    public static void instrukcja() {
-        System.out.println("Witaj w panelu instrukcji. Czego chciałbyś się dowiedzieć?");
-    }
-
-
-    public static void punkty() {
-        System.out.println("Witaj w panelu podliczaniu punktów. ");
-    }
-
     public static void assistWithGameSetup() {
         SettingGame settingGame = new SettingGame();
         settingGame.welcome();
         String wybor = scanner.next();
         switch (wybor) {
             case "1" -> {
-                settingGame.firstStep();
+                settingGame.firstStepp();
                 System.out.println("działa");
             }
             case "2" -> settingGame.secondStep();
             case "3" -> settingGame.thirdStep();
+            case "4" -> settingGame.fourthStep();
+            case "5" -> settingGame.fifthStep();
+            case "6" -> settingGame.sixthStep();
+            case "7" -> settingGame.seventhStep();
+            case "8" -> settingGame.eighthStep();
             default -> System.out.println("reszta nie działa ");
         }
     }

@@ -1,7 +1,11 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class SettingGame {
 
+
+    public ArrayList <String> listaStringow = new ArrayList<>();
 
     public void welcome(){
         System.out.println("Witaj w asystencie rozkładania gry. Wybierz etap który sprawia dla Ciebie trudność.");
@@ -16,31 +20,20 @@ public class SettingGame {
         System.out.println("9. Wyjście");
     }
 
-
-    public void control(){
-
+    public void con(){
+        listaStringow.add(firstStep());
     }
 
 
-    public void control(String input) {
-        switch (input) {
-            case "1":
-                System.out.println("Plansza");
-                firstStep();
-                break;
-            case "2":
-                System.out.println("działa");
-                secondStep();
-                break;
-            default:
-                System.out.println("Powtórz wybór");
-        }
 
-    }
     //TODO przekształcić na tablice Stringów
     //TODO funkcja która wkłada tekst do tablicy
 
-    public void firstStep() {
+    private String firstStep(){
+        return "Planszę należy umieścić na środku stołu. Wszystkie 9 obszarów oceanów należy umieścić na odpowiadającym im polu Wskaźnika Globalneg. Znaczniki Temperatury i Poziomu Tlenu należy umieścić na początkowych pozycjach odpowiednich torów. Znacznik pokoleń należy umieścić na polu „1” toru WT";
+    }
+
+    public void firstStepp() {
         System.out.println("Planszę należy umieścić na środku stołu. Wszystkie 9 obszarów oceanów należy umieścić na odpowiadającym im polu Wskaźnika Globalneg. Znaczniki Temperatury i Poziomu Tlenu należy umieścić na początkowych pozycjach odpowiednich torów. Znacznik pokoleń należy umieścić na polu „1” toru WT");
     }
 
