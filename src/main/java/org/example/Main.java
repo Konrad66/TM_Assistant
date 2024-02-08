@@ -18,7 +18,7 @@ public class Main {
         if (wybor.equals("1")) {
             assistWithGameSetup();
         } else if(wybor.equals("2")){
-
+            assistWithInstruction();
         }
         else {
             System.out.println("nie działa");
@@ -71,6 +71,10 @@ Który z podpunktów chcesz rozwinąć?
             case "3" -> settingGame.thirdStep();
             default -> System.out.println("reszta nie działa ");
         }
+    }
+
+    public static void assistWithInstruction(){
+
     }
 
 }

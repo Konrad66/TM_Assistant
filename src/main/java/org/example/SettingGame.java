@@ -5,19 +5,20 @@ public class SettingGame {
 
     public void welcome(){
         System.out.println("Witaj w asystencie rozkładania gry. Wybierz etap który sprawia dla Ciebie trudność.");
-        System.out.println("Plansza");
-        System.out.println("Kości");
-        System.out.println("Karty");
-
-
-// 9 - wyjscie
+        System.out.println("1. Plansza");
+        System.out.println("2. Kostki zasobów i pozostałe obszary");
+        System.out.println("3. Talia projektów");
+        System.out.println("4. Gracze");
+        System.out.println("5. Karty korporacji");
+        System.out.println("6. Karty projektów");
+        System.out.println("7. Warunki początkowe");
+        System.out.println("8. Rozpoczęcie rozgrywki");
+        System.out.println("9. Wyjście");
     }
 
 
-    public void controll(String input){
-        if(input.equals("1")){
-            firstStep();
-        }
+    public void control(){
+
     }
 
 
