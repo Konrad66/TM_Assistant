@@ -8,6 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        SettingGame settingGame = new SettingGame();
+        settingGame.setUpStep();
+        System.out.println(settingGame.listaStringow.get(2));
+
         System.out.println("Witaj w asystencie TM. Poniżej masz kilka opcji do wyboru");
         System.out.println("1. Pomoc przy rozkładaniu gry.");
         System.out.println("2. Interaktywna instrukcja.");
@@ -23,6 +27,8 @@ public class Main {
         else {
             System.out.println("nie działa");
         }
+
+
 
 
     }
