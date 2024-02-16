@@ -39,16 +39,16 @@ public class Main {
         String wybor = scanner.next();
         switch (wybor) {
             case "1" -> {
-                settingGame.firstStepp();
+                System.out.println();
                 System.out.println("działa");
             }
-            case "2" -> settingGame.secondStep();
-            case "3" -> settingGame.thirdStep();
-            case "4" -> settingGame.fourthStep();
-            case "5" -> settingGame.fifthStep();
-            case "6" -> settingGame.sixthStep();
-            case "7" -> settingGame.seventhStep();
-            case "8" -> settingGame.eighthStep();
+            case "2" -> System.out.println(settingGame.listaStringow.get(0));
+            case "3" -> System.out.println();
+            case "4" -> System.out.println();
+            case "5" -> System.out.println();
+            case "6" -> System.out.println();
+            case "7" -> System.out.println();
+            case "8" -> System.out.println();
             default -> System.out.println("reszta nie działa ");
         }
 
